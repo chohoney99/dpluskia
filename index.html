@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dplus KIA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.7.0.min.js"></script>
+    <script>
+        $('.photobox').hover(function(){
+        $(this).children('.cover').fadeIn();
+        $(this).children('.line').animate({width:'100%'},1000);
+        }, function(){
+        $(this).children('.cover').fadeOut();
+        $(this).children('.line').animate({width:'0%'},1000);
+        });
+    </script>
+
+</head>
+<body>
+    <header>
+        <div id="head">
+            <div id="logo">
+                <a href=""><img src="img/logo300.jpg" alt=""></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">TEAM</a></li>
+                    <li><a href="https://shop.dpluskia.gg/" target="_blank">SHOP</a></li>
+                    <li><a href="https://www.youtube.com/@DplusKIA_LOL" target="_blank">YOUTUBE</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </nav>  
+        </div>      
+    </header>
+    <div id="slider">
+    </div>
+    <div id="news">
+        <div class="news">
+            <div class="title">
+                <span></span>
+                <h1>News</h1>
+            </div>
+            <div class="newsbox">
+                <div class="news1">
+                    <a href="https://www.inven.co.kr/webzine/news/?news=285678" target="_blank">
+                        <div class="photobox">
+                            <div class="cover"></div>
+                                <img src="img/news1.jpg" alt="" class="newsimg">
+                            <div class="line"></div>
+                        </div>
+                        <div class="textbox">
+                            <p class="article">디플러스 기아 '데프트' 김혁규<br>코로나19 확진</p>
+                            <p class="reporter">인벤 - 김병호 기자</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="news2">
+                    <a href="https://www.inven.co.kr/webzine/news/?news=282001&site=lol" target="_blank">
+                        <div class="photobox">
+                            <img src="img/news2.jpg" alt="" class="newsimg">
+                        </div>
+                        <div class="textbox">
+                            <p class="article">살아난 '쇼메이커' 그리고 DK,<br> KT에 선승</p>
+                            <p class="reporter">인벤 - 장민영 기자</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="news3">
+                    <a href="https://www.kukinews.com/newsView/kuk202303160197" target="_blank">
+                        <div class="photobox">
+                            <img src="img/news3.jpg" alt="" class="newsimg">
+                        </div>
+                        <div class="textbox">
+                            <p class="article">DK 최천주 감독 “원사이드했다…<br> T1, 빡빡하게 게임해”</p>
+                            <p class="reporter">쿠키뉴스 - 문대찬 기자</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="league">
+        <div class="league">
+            <div class="leaguebox">
+                <div class="nextmatch">
+                    <h2>Next Match</h2>
+                    <div class="match">
+                        <div class="team1">
+                            <img src="img/matchdk.jpg" alt=""><br>
+                            <p>DK</p>
+                        </div>
+                        <span class="vs">vs</span>
+                        <div class="team2">
+                            <img src="img/matcht1.jpg" alt=""><br>
+                            <p>T1</p>
+                        </div>
+                    </div>
+                    <div class="matchdate">
+                        <h3>2023 LoL 챔피언스 코리아 서머</h3>
+                        <h3>정규시즌 2라운드</h3>
+                        <h4>7.16.일 15:00</h4>
+                        <h4>롤파크 LCK아레나</h4>
+                    </div>
+                </div>
+                <div class="ranking">
+                    <table>
+                        <thead>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td>승패</td>
+                                <td>득실차</td>
+                                <td>연속</td>
+                                <td></td>
+                                <td></td>
+                                <td>승패</td>
+                                <td>득실차</td>
+                                <td>연속</td>
+                            </tr>
+                        </thead>
+                        <tr>
+                            <td>1</td>
+                            <td>GEN</td>
+                            <td>11-0</td>
+                            <td>+19</td>
+                            <td>11승</td>
+                            <td>6</td>
+                            <td>KDF</td>
+                            <td>4-7</td>
+                            <td>-5</td>
+                            <td>3패</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>KT</td>
+                            <td>10-1</td>
+                            <td>+17</td>
+                            <td>9승</td>
+                            <td>7</td>
+                            <td>DRX</td>
+                            <td>8-16</td>
+                            <td>-8</td>
+                            <td>1패</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>DK</td>
+                            <td>7-4</td>
+                            <td>+7</td>
+                            <td>3승</td>
+                            <td>8</td>
+                            <td>BRO</td>
+                            <td>3-8</td>
+                            <td>-11</td>
+                            <td>1승</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>T1</td>
+                            <td>6-4</td>
+                            <td>+3</td>
+                            <td>2패</td>
+                            <td>9</td>
+                            <td>LSB</td>
+                            <td>2-9</td>
+                            <td>-13</td>
+                            <td>6패</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>HLE</td>
+                            <td>6-5</td>
+                            <td>+4</td>
+                            <td>1패</td>
+                            <td>10</td>
+                            <td>NS</td>
+                            <td>2-9</td>
+                            <td>-13</td>
+                            <td>1패</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="youtube">
+        <div class="youtube">
+            <div class="title">
+                <span></span>
+                <h1>YouTube</h1>
+            </div>
+            <div class="videobox">
+                <div class="video1">
+                    <iframe width="600" height="400" src="https://www.youtube.com/embed/p3y9g6UyqS8" title="어떻게 했어야 됐을까 | Summer Voice Comms [No.2023]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="video2">
+                    <iframe width="600" height="400" src="https://www.youtube.com/embed/_L7KjFK4AL4" title="트페 (물리)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="shop">
+        <div class="shop">
+            <div class="title">
+                <span></span>
+                <h1>Shop</h1>
+            </div>
+            <div class="product">
+                <div class="product1">
+                    <img src="img/uniform.png" alt="">
+                </div>
+                <div class="product2">
+                    <img src="img/callender.jpg" alt="">
+                </div>
+                <div class="product3">
+                    <img src="img/jersey.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+    </footer>
+
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.7.0.min.js"></script>
+    <script>
+        $('.photobox').hover(function(){
+        $(this).children('.cover').fadeIn();
+        $(this).children('.line').animate({width:'100%'},300);
+        }, function(){
+        $(this).children('.cover').fadeOut();
+        $(this).children('.line').animate({width:'0%'},300);
+        });
+    </script>
+</body>
+</html>
