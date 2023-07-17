@@ -10,15 +10,6 @@
     <link rel="stylesheet" href="css/main.css">
 
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.7.0.min.js"></script>
-    <script>
-        $('.photobox').hover(function(){
-        $(this).children('.cover').fadeIn();
-        $(this).children('.line').animate({width:'100%'},1000);
-        }, function(){
-        $(this).children('.cover').fadeOut();
-        $(this).children('.line').animate({width:'0%'},1000);
-        });
-    </script>
 
 </head>
 <body>
@@ -39,6 +30,7 @@
         </div>      
     </header>
     <div id="slider">
+        <img src="img/dk980.jpg" alt="">
     </div>
     <div id="news">
         <div class="news">
@@ -48,36 +40,37 @@
             </div>
             <div class="newsbox">
                 <div class="news1">
-                    <a href="https://www.inven.co.kr/webzine/news/?news=285678" target="_blank">
+                    <a href="http://osen.mt.co.kr/article/G1112145271" target="_blank">
                         <div class="photobox">
-                            <div class="cover"></div>
-                                <img src="img/news1.jpg" alt="" class="newsimg">
+                            <img src="img/news1.jpg" alt="" class="newsimg">
                             <div class="line"></div>
                         </div>
                         <div class="textbox">
-                            <p class="article">디플러스 기아 '데프트' 김혁규<br>코로나19 확진</p>
-                            <p class="reporter">인벤 - 김병호 기자</p>
+                            <p class="article">‘정글 역대 세 번째 3000 어시’…<br> ‘캐니언’ 김건부, “부족한 점 보완,<br> KT전 임하겠다”</p>
+                            <p class="reporter">OSEN - 고용준 기자</p>
                         </div>
                     </a>
                 </div>
                 <div class="news2">
-                    <a href="https://www.inven.co.kr/webzine/news/?news=282001&site=lol" target="_blank">
+                    <a href="https://news.kmib.co.kr/article/view.asp?arcid=0018468915" target="_blank">
                         <div class="photobox">
                             <img src="img/news2.jpg" alt="" class="newsimg">
+                            <div class="line"></div>
                         </div>
                         <div class="textbox">
-                            <p class="article">살아난 '쇼메이커' 그리고 DK,<br> KT에 선승</p>
-                            <p class="reporter">인벤 - 장민영 기자</p>
+                            <p class="article">8전9기 끝에…<br> DK, ‘T1의 벽’ 넘었다</p>
+                            <p class="reporter">국민일보 - 윤민섭 기자</p>
                         </div>
                     </a>
                 </div>
                 <div class="news3">
-                    <a href="https://www.kukinews.com/newsView/kuk202303160197" target="_blank">
+                    <a href="https://www.kukinews.com/newsView/kuk202303180025" target="_blank">
                         <div class="photobox">
                             <img src="img/news3.jpg" alt="" class="newsimg">
+                            <div class="line"></div>
                         </div>
                         <div class="textbox">
-                            <p class="article">DK 최천주 감독 “원사이드했다…<br> T1, 빡빡하게 게임해”</p>
+                            <p class="article">최천주 DK 감독 “PO 2R 올라가서 T1-젠지에 복수하겠다”</p>
                             <p class="reporter">쿠키뉴스 - 문대찬 기자</p>
                         </div>
                     </a>
@@ -193,7 +186,7 @@
         <div class="youtube">
             <div class="title">
                 <span></span>
-                <h1>YouTube</h1>
+                <h1><a href="https://www.youtube.com/@DplusKIA_LOL" target="_blank">YouTube</a></h1>
             </div>
             <div class="videobox">
                 <div class="video1">
@@ -209,33 +202,59 @@
         <div class="shop">
             <div class="title">
                 <span></span>
-                <h1>Shop</h1>
+                <h1><a href="https://shop.dpluskia.gg/" target="_blank">Shop</a></h1>
             </div>
             <div class="product">
                 <div class="product1">
-                    <img src="img/uniform.png" alt="">
+                    <a href=""><img src="img/uniform.png" alt="" class="productimg"></a>
+                    <a href=""><p>2023 Dplus KIA 공식 유니폼</p></a>
+                    <a href=""><p>99,000원</p></a>
                 </div>
                 <div class="product2">
-                    <img src="img/callender.jpg" alt="">
+                    <a href=""><img src="img/callender.jpg" alt=""></a>
+                    <a href=""><p>2023 Dplus KIA 캘린더</p></a>
+                    <a href=""><p>15,000원</p></a>
                 </div>
                 <div class="product3">
-                    <img src="img/jersey.jpg" alt="">
+                    <a href=""><img src="img/jersey.jpg" alt=""></a>
+                    <a href=""><p>2022 DWG KIA Worlds Uniform Jersey</p></a>
+                    <a href=""><p>119,000원</p></a>
                 </div>
             </div>
         </div>
     </div>
     <footer>
+        <div id="foot">
+            <img src="img/footlogo.jpg" alt="">
+            <div class="info">
+                <h2>COMPANY INFO</h2>
+                <ul>
+                    <li>주식회사 : 에이디이이스포츠</li>
+                    <li>대표자 : 이유영</li>
+                    <li>소재지 : 서울특별시 영등포구 도신로 73 (덕우빌딩)</li>
+                    <li>E-mail : business@dpluskia.gg</li>
+                </ul>
+            </div>
+            <div class="social">
+                <h2>SOCIAL</h2>
+                <ul>
+                    <li><a href="">Twitter</a></li>
+                    <li><a href="">Facebook</a></li>
+                    <li><a href="">Instagram</a></li>
+                    <li><a href="">Youtube</a></li>
+                </ul>
+            </div>
+            <p class="rights">© Dplus KIA All rights reserved.</p>
+        </div>
     </footer>
 
 
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.7.0.min.js"></script>
     <script>
         $('.photobox').hover(function(){
-        $(this).children('.cover').fadeIn();
-        $(this).children('.line').animate({width:'100%'},300);
+        $(this).children('.line').stop().animate({width:'100%'},300);
         }, function(){
-        $(this).children('.cover').fadeOut();
-        $(this).children('.line').animate({width:'0%'},300);
+        $(this).children('.line').stop().animate({width:'0%'},300);
         });
     </script>
 </body>
