@@ -5,7 +5,7 @@
     font-weight: normal;
     font-style: normal;
 }
-@media (min-width:1217px){
+@media (max-width:1216px){
 
     * {
         margin: 0;
@@ -29,7 +29,7 @@
         background-color: #000;
     }
     #head {
-        width: 1200px; height: 100%;
+        width: 100%; height: 100%;
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
@@ -57,14 +57,15 @@
     }
 
     #news {
-        width: 100%; height: 750px;
+        width: 100%;
         background-color: #222;
         display: flex;
         justify-content: center;
         align-items: center;
     }
     .news {
-        width: 1200px; height: 550px;
+        width: 90%;
+        padding: 100px 0;
     }
     .title {
         display: flex;
@@ -79,14 +80,14 @@
         margin: 0 0 10px 10px;
     }
     .newsbox {
-        width: 100%; height: 500px;
+        width: 100%;
         margin: 0 auto;
         position: relative;
         display: flex;
     }
     .photobox {
         position: relative;
-        width: 400px; height: 100%;
+        width: 100%;
         background-color: #000;
         overflow: hidden;
     }
@@ -119,13 +120,14 @@
     }
     .textbox p {
         font-family: 'NEXON Lv1 Gothic OTF';
+        font-size: 16px;
     }
     .article {
         font-size: 24px;
     }
-    
+
     #league {
-        width: 100%; height: 600px;
+        width: 100%; height: 1100px;
         background-color: #333;
         display: flex;
         flex-direction: row;
@@ -133,9 +135,11 @@
         align-items: center;
     }
     .league {
-        width: 1200px; height: 400px;
+        width: 100%; height: 900px;
         display: flex;
-        justify-content: space-between;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
     }
     .league h3, .league h4 {
         text-align: center;
@@ -144,7 +148,7 @@
         line-height: 40px;
     }
     .nextmatch {
-        width: 35%; height: 400px;
+        width: 90%; height: 400px;
         border: 1px solid #B8FCCC;
     }
     .league h2 {
@@ -175,7 +179,7 @@
         border-radius: 30px;
     }
     .ranking {
-        width: 60%; height: 400px;
+        width: 90%; height: 400px;
         border: 1px solid #B8FCCC;
     }
     .ranking table {
@@ -228,22 +232,23 @@
     }
 
     #shop {
-        width: 100%; height: 700px;
+        width: 100%;
         background-color: #333;
         display: flex;
         justify-content: center;
         align-items: center;
     }
     .shop {
-        width: 1200px; height: 500px;
+        width: 90%;
+        padding: 100px 0;
     }
     .product {
-        width: 1200px; height: 400px;
+        width: 100%;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
     }
     .product img {
-        width: 390px;
+        width: 330px;
         border-radius: 10px;
     }
     .product p {
@@ -252,6 +257,9 @@
         color: #000;
         text-align: center;
         font-weight: bold;
+    }
+    .product3 {
+        display: none;
     }
 
     footer {
