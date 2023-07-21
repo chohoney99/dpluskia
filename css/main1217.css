@@ -5,7 +5,7 @@
     font-weight: normal;
     font-style: normal;
 }
-@media (max-width:1216px){
+@media (min-width:768px){
 
     * {
         margin: 0;
@@ -90,14 +90,6 @@
         width: 100%;
         background-color: #000;
         overflow: hidden;
-    }
-    .cover {
-        position: absolute;
-        top: 0; left: 0;
-        z-index: 3;
-        width: 100%; height: 100%;
-        background-color: rgba(255, 255, 255, 0.3);
-        display: none;
     }
     .photobox img {
         width: 100%; height: 100%;
@@ -214,21 +206,32 @@
     .ranking table td:nth-of-type(7) {
         width: 20%;
     }
+    .ranking2 {
+        display: none;
+    }
 
     #youtube {
-        width: 100%; height: 650px;
+        width: 100%;
         background-color: #222;
         display: flex;
         justify-content: center;
         align-items: center;
     }
     .youtube {
-        width: 1200px; height: 450px;
+        width: 90%;
+        padding: 100px 0;
     }
     .videobox {
-        width: 1200px; height: 400px;
+        width: 100%;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
+    }
+    .video1, .video2 {
+        display: none;
+    }
+    .video3 iframe {
+        min-width: 750px;
+        min-height: 400px;
     }
 
     #shop {
