@@ -227,11 +227,14 @@
         justify-content: center;
     }
     .video1, .video2, .video4 {
+        
         display: none;
     }
+    .video3 {
+        width: 100%;
+    }
     .video3 iframe {
-        min-width: 750px;
-        min-height: 400px;
+        min-height: 500px;
     }
 
     #shop {
