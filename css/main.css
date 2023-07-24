@@ -110,6 +110,7 @@
         margin-left: 20px;
     }
     .textbox p {
+        font-size: 20px;
         font-family: 'NEXON Lv1 Gothic OTF';
     }
     .article {
@@ -221,7 +222,10 @@
         display: flex;
         justify-content: space-between;
     }
-    .video3 {
+    .video1, .video2 {
+        display: block;
+    }
+    .video3, .video4 {
         display: none;
     }
 
@@ -250,6 +254,9 @@
         color: #000;
         text-align: center;
         font-weight: bold;
+    }
+    .product3 {
+        display: block;
     }
 
     footer {

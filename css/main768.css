@@ -54,9 +54,15 @@
     }
     nav {
         display: none;
+        position: absolute;
+        background-color: #000;
+        width: 100%;
+        top: 100px;
+        right: 0px;
     }
     nav ul {
         display: flex;
+        flex-direction: column;
     }
     nav ul li {
         margin: 20px;
@@ -78,8 +84,14 @@
         align-items: center;
     }
     .news {
-        width: 90%;
+        width: 400px;
         padding: 100px 0;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .news1, .news2 {
+        margin-bottom: 50px;
+        position: relative;
     }
     .title {
         display: flex;
@@ -99,6 +111,7 @@
         position: relative;
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
     }
     .photobox {
         position: relative;
@@ -127,7 +140,7 @@
     }
     .textbox p {
         font-family: 'NEXON Lv1 Gothic OTF';
-        font-size: 16px;
+        font-size: 20px;
     }
     .article {
         font-size: 24px;
@@ -233,20 +246,20 @@
         align-items: center;
     }
     .youtube {
-        width: 90%;
+        width: 467px;
         padding: 100px 0;
     }
     .videobox {
         width: 100%;
         display: flex;
-        justify-content: center;
     }
-    .video1, .video2 {
+    .video1, .video2, .video3 {
         display: none;
     }
-    .video3 iframe {
-        min-width: 750px;
-        min-height: 400px;
+    .video4 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     #shop {
@@ -257,13 +270,16 @@
         align-items: center;
     }
     .shop {
-        width: 90%;
+        width: 330px;
         padding: 100px 0;
+        display: flex;
+        flex-wrap: wrap;
     }
     .product {
         width: 100%;
         display: flex;
-        justify-content: space-evenly;
+        flex-wrap: wrap;
+        justify-content: center;
     }
     .product img {
         width: 330px;
@@ -276,12 +292,9 @@
         text-align: center;
         font-weight: bold;
     }
-    .product3 {
-        display: none;
-    }
 
     footer {
-        width: 100%; height: 400px;
+        width: 100%;
         background-color: #222;
         display: flex;
         justify-content: center;

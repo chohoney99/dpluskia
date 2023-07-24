@@ -21,7 +21,7 @@
                 <a href=""><img src="img/logo300.jpg" alt=""></a>
                 <img src="img/i.png" alt="" class="menu">
             </div>
-            <nav>
+            <nav class="nav">
                 <ul>
                     <li><a href="">HOME</a></li>
                     <li><a href="">TEAM</a></li>
@@ -49,8 +49,8 @@
                             <div class="line"></div>
                         </div>
                         <div class="textbox">
-                            <p class="article">‘정글 역대 세 번째 3000 어시’…<br> ‘캐니언’ 김건부, “부족한 점 보완,<br> KT전 임하겠다”</p>
-                            <p class="reporter">OSEN - 고용준 기자</p>
+                            <p>‘정글 역대 세 번째 3000 어시’…<br> ‘캐니언’ 김건부, “부족한 점 보완,<br> KT전 임하겠다”</p>
+                            <p>OSEN - 고용준 기자</p>
                         </div>
                     </a>
                 </div>
@@ -61,8 +61,8 @@
                             <div class="line"></div>
                         </div>
                         <div class="textbox">
-                            <p class="article">8전9기 끝에…<br> DK, ‘T1의 벽’ 넘었다</p>
-                            <p class="reporter">국민일보 - 윤민섭 기자</p>
+                            <p>8전9기 끝에…<br> DK, ‘T1의 벽’ 넘었다</p>
+                            <p>국민일보 - 윤민섭 기자</p>
                         </div>
                     </a>
                 </div>
@@ -73,8 +73,8 @@
                             <div class="line"></div>
                         </div>
                         <div class="textbox">
-                            <p class="article">최천주 DK 감독 “PO 2R 올라가서<br> T1-젠지에 복수하겠다”</p>
-                            <p class="reporter">쿠키뉴스 - 문대찬 기자</p>
+                            <p>최천주 DK 감독 “PO 2R 올라가서<br> T1-젠지에 복수하겠다”</p>
+                            <p>쿠키뉴스 - 문대찬 기자</p>
                         </div>
                     </a>
                 </div>
@@ -284,6 +284,10 @@
                 <div class="video3">
                     <iframe width="100%" height="100%" src="https://www.youtube.com/embed/wVvn6n18_9M" title="밴픽 | Be The One S4 EP.1 [2023 LCK SUMMER]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
+                <div class="video4">
+                    <iframe width="467" height="831" src="https://www.youtube.com/embed/8V0rV872iFE" title="미식가 #데프트 #Deft #shorts" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe width="467" height="831" src="https://www.youtube.com/embed/y9AhfxFwxqQ" title="미드 진 | ep.2 #쇼메이커 #ShowMaker #shorts" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
             </div>
         </div>
     </div>
@@ -344,6 +348,18 @@
         $(this).children('.line').stop().animate({width:'100%'},300);
         }, function(){
         $(this).children('.line').stop().animate({width:'0%'},300);
+        });
+
+        $(function(){
+            $('.menu').click(function(){
+                $('.nav').slideToggle();
+            });
+        });
+        
+        $(window).resize(function(){
+            if(window.innerWidth>=768){
+                $('nav').show();
+            }
         });
     </script>
 </body>

@@ -226,7 +226,7 @@
         display: flex;
         justify-content: center;
     }
-    .video1, .video2 {
+    .video1, .video2, .video4 {
         display: none;
     }
     .video3 iframe {
