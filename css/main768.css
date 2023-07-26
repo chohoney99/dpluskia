@@ -6,69 +6,6 @@
     font-style: normal;
 }
 @media (max-width:767px){
-
-    * {
-        margin: 0;
-        color: #fff;
-        font-family: 'Montserrat', sans-serif;
-    }
-    ul, ol, li {
-        list-style: none;
-        margin: 0; padding: 0;
-    }
-    a {
-        text-decoration: none;
-        color: #fff;
-    }
-    h1 {
-        font-family: 'Montserrat', sans-serif;
-    }
-
-    header {
-        width: 100%; height: 100px;
-        background-color: #000;
-    }
-    #head {
-        width: 100%; height: 100%;
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    #logo {
-        width: 100%; height: 100px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    #logo img{
-        width: 100px; height: 100px;
-        margin-left: 10px;
-    }
-    #logo .menu {
-        width: 30px; height: 30px;
-        margin-right: 10px;
-    }
-    #logo .menu:hover {
-        cursor: pointer;
-    }
-    nav {
-        display: none;
-        position: absolute;
-        background-color: #000;
-        width: 100%;
-        top: 100px;
-        right: 0px;
-    }
-    nav ul {
-        display: flex;
-        flex-direction: column;
-    }
-    nav ul li {
-        margin: 20px;
-        letter-spacing: 2px;
-        font-family: 'Montserrat', sans-serif;
-    }
     #slider {
         background-color: #222;
     }
@@ -291,38 +228,5 @@
         color: #000;
         text-align: center;
         font-weight: bold;
-    }
-
-    footer {
-        width: 100%;
-        background-color: #222;
-        display: flex;
-        justify-content: center;
-    }
-    #foot {
-        width: 1200px; height: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        line-height: 40px;
-    }
-    #foot img {
-        width: 200px; height: 200px;
-    }
-    .info {
-        width: 100%;
-        text-align: center;
-    }
-    .social {
-        width: 100%;
-        text-align: center;
-    }
-    #foot table th {
-        text-align: left;
-    }
-    #foot .rights {
-        width: 100%;
-        text-align: center;
     }
 }
