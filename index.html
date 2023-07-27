@@ -13,7 +13,27 @@
     <link rel="stylesheet" href="css/common.css">
 
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.7.0.min.js"></script>
+    <script>
+        $(function(){
+            $('.photobox').hover(function(){
+            $(this).children('.line').stop().animate({width:'100%'},300);
+            }, function(){
+            $(this).children('.line').stop().animate({width:'0%'},300);
+            });
 
+            $(function(){
+                $('.menu').click(function(){
+                    $('.nav').slideToggle();
+                });
+            });
+            
+            $(window).resize(function(){
+                if(window.innerWidth>=768){
+                    $('nav').show();
+                }
+            });
+        });
+    </script>
 </head>
 <body>
     <header>
@@ -341,27 +361,5 @@
             <p class="rights">© Dplus KIA All rights reserved.</p>
         </div>
     </footer>
-
-
-    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.7.0.min.js"></script>
-    <script>
-        $('.photobox').hover(function(){
-        $(this).children('.line').stop().animate({width:'100%'},300);
-        }, function(){
-        $(this).children('.line').stop().animate({width:'0%'},300);
-        });
-
-        $(function(){
-            $('.menu').click(function(){
-                $('.nav').slideToggle();
-            });
-        });
-        
-        $(window).resize(function(){
-            if(window.innerWidth>=768){
-                $('nav').show();
-            }
-        });
-    </script>
 </body>
 </html>

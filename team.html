@@ -8,12 +8,26 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/team768.css">
+    <link rel="stylesheet" href="css/team1217.css">
     <link rel="stylesheet" href="css/team.css">
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.7.0.min.js"></script>
     <script>
         $(document).ready(function(){
             $(".year").click(function(){
                 $(this).next(".awards").toggle("fast");
+            });
+
+            $(function(){
+                $('.menu').click(function(){
+                    $('.nav').slideToggle();
+                });
+            });
+            
+            $(window).resize(function(){
+                if(window.innerWidth>=768){
+                    $('nav').show();
+                }
             });
         });
     </script>
@@ -23,7 +37,7 @@
         <div id="head">
             <div id="logo">
                 <a href="index.html"><img src="img/logo300.jpg" alt=""></a>
-                <img src="img/i.png" alt="" class="menu" style="display: none;">
+                <img src="img/i.png" alt="" class="menu">
             </div>
             <nav class="nav">
                 <ul>
@@ -36,43 +50,7 @@
             </nav>  
         </div>      
     </header>
-    <div id="history">
-        <div class="history">
-            <h1>HISTORY</h1>
-            <span></span>
-            <h2 class="year">2021</h2>
-            <div class="awards">
-                <ul class="2021">
-                    <li>2021 e-스포츠 명예의 전당 올해의 e-스포츠 팀상</li>
-                    <li>리그 오브 레전드 2021 월드 챔피언십 준우승</li>
-                    <li>2021 LoL Champions Korea Summer 우승</li>
-                    <li>2021 Mid-Season Invitational 준우승</li>
-                    <li>2021 LoL Champions Korea Spring 우승</li>    
-                </ul>
-            </div>
-            <h2 class="year">2020</h2>
-            <div class="awards">
-                <ul class="2020">
-                    <li>2020 LoL KeSPA Cup ULSAN 우승</li>
-                    <li>2020 e-스포츠 명예의 전당 올해의 e-스포츠 팀상</li>
-                    <li><span>리그 오브 레전드 2020 월드 챔피언십 우승</span></li>
-                    <li>2020 우리은행 LoL Champions Korea Summer 우승</li>
-                </ul>
-            </div>    
-            <h2 class="year">2019</h2>
-            <div class="awards">
-                <ul class="2019">
-                    <li>2019 리프트 라이벌즈 우승 (Team LCK)</li>
-                </ul>
-            </div>
-            <h2 class="year">2018</h2>
-            <div class="awards">
-                <ul class="2018">
-                    <li>2018 LoL Challengers Korea Summer 정규시즌 우승</li>
-                </ul>
-            </div>    
-        </div>
-    </div>
+
     <div id="team">
         <div class="team">
             <div id="players">
@@ -164,6 +142,45 @@
                     <div class="coach empty"></div>
                 </div>
             </div>
+        </div>
+    </div>
+    <div id="history">
+        <div class="history">
+            <div class="title">
+                <span></span>
+                <h1>HISTORY</h1>
+            </div>
+            <h2 class="year">2021</h2>
+            <div class="awards">
+                <ul class="2021">
+                    <li>2021 e-스포츠 명예의 전당 올해의 e-스포츠 팀상</li>
+                    <li>리그 오브 레전드 2021 월드 챔피언십 준우승</li>
+                    <li>2021 LoL Champions Korea Summer 우승</li>
+                    <li>2021 Mid-Season Invitational 준우승</li>
+                    <li>2021 LoL Champions Korea Spring 우승</li>    
+                </ul>
+            </div>
+            <h2 class="year">2020</h2>
+            <div class="awards">
+                <ul class="2020">
+                    <li>2020 LoL KeSPA Cup ULSAN 우승</li>
+                    <li>2020 e-스포츠 명예의 전당 올해의 e-스포츠 팀상</li>
+                    <li><span>리그 오브 레전드 2020 월드 챔피언십 우승</span></li>
+                    <li>2020 우리은행 LoL Champions Korea Summer 우승</li>
+                </ul>
+            </div>    
+            <h2 class="year">2019</h2>
+            <div class="awards">
+                <ul class="2019">
+                    <li>2019 리프트 라이벌즈 우승 (Team LCK)</li>
+                </ul>
+            </div>
+            <h2 class="year">2018</h2>
+            <div class="awards">
+                <ul class="2018">
+                    <li>2018 LoL Challengers Korea Summer 정규시즌 우승</li>
+                </ul>
+            </div>    
         </div>
     </div>
     <footer>
