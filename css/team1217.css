@@ -6,7 +6,7 @@
     font-style: normal;
 }
 
-@media (min-width:1217px){
+@media (min-width:768px){
     #team {
         width: 100%;
         background-color: #222;
@@ -14,7 +14,7 @@
         justify-content: center;
     }
     .team {
-        width: 1200px;
+        width: 90%;
         padding: 100px 0;
     }
     #players {
@@ -33,7 +33,7 @@
         justify-content: space-between;
     }
     .player, .coach{
-        width: 30%;
+        width: 47%;
         margin-bottom: 30px;
     }
     .player img, .coach img {
@@ -54,7 +54,7 @@
         justify-content: center;
     }
     .history {
-        width: 1200px;
+        width: 90%;
         padding: 100px 0;
         display: flex;
         flex-wrap: wrap;
